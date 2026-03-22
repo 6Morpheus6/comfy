@@ -19,7 +19,7 @@ module.exports = {
           "{{platform === 'win32' && gpu === 'amd' ? 'python main.py --directml' : 'python main.py'}}"
         ],
         on: [{
-          "event": "/starting server.+(http:\/\/[a-zA-Z0-9.]+:[0-9]+)/i",
+          "event": "/To see the GUI go to: +(http:\/\/[a-zA-Z0-9.]+:[0-9]+)/i",
           "done": true
         }, {
           // kill: true ensures ComfyUI is fully terminated before we jump back to restart after manager installs custom nodes
