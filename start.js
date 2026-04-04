@@ -70,7 +70,7 @@ module.exports = {
       "id": "set_url",
       method: "local.set",
       params: {
-        url: "{{input.url}}"
+        url: "http://localhost:8188"
       }
     }
   ]
